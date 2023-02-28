@@ -1,0 +1,28 @@
+{
+    "description": "项目配置文件。",
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        }
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.30.2",
+    "appid": "wxc946b8cd1fdc53af",
+    "projectname": "timer",
+    "condition": {},
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}
