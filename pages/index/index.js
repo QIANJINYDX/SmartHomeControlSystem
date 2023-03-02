@@ -1,7 +1,7 @@
 const util = require('../../utils/util.js')
 const defaultLogName = {
-  work: '工作',
-  rest: '休息'
+  work: '灯',
+  rest: '电视'
 }
 const actionName = {
   stop: '停止',

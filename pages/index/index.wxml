@@ -12,7 +12,7 @@
 			 	<text 
 			 		wx:if="{{isRuning}}" 
 			 		animation="{{nameAnimation}}" 
-			 		class="timer_taskName">{{taskName}}{{completed ? '已完成！' : '中'}}</text>
+			 		class="timer_taskName">{{taskName}}{{completed ? '已完成！' : '使用中'}}</text>
 		 		<image 
 		 			wx:if="{{completed}}" 
 		 			class="timer_done" 
@@ -23,36 +23,18 @@
 		 	placeholder-style="text-align:center" 
 		 	class="timer_inputname" 
 		 	bindinput="changeLogName"
-		 	placeholder="请输入您的指令"/>
+		 	placeholder="请选择您要启动的设备"/>
 	</view>
 	
-	<view class="timer_footer1">
+	<view class="timer_footer">
 	  <view 
 	  	bindtap="startTimer" 
 	  	data-type="work" 
-	  	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '完成': '灯'}}</view>
+	  	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '关闭': '灯'}}</view>
 	  <view 
 	  	bindtap="startTimer" 
 	  	data-type="rest" 
-	  	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >{{isRuning ? '完成': '电视'}}</view>
-      <view 
-	  	bindtap="startTimer" 
-	  	data-type="other" 
-	  	class="timer_ctrl {{isRuning && timerType == 'other' ? 'hide' : ''}}" >{{isRuning ? '完成': '灯'}}</view>
-	</view>
-    <view class="timer_footer2">
-	  <view 
-	  	bindtap="startTimer" 
-	  	data-type="work" 
-	  	class="timer_ctrl {{isRuning && timerType == 'rest' ? 'hide' : ''}}" >{{isRuning ? '完成': '灯'}}</view>
-	  <view 
-	  	bindtap="startTimer" 
-	  	data-type="rest" 
-	  	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >{{isRuning ? '完成': '电视'}}</view>
-      <view 
-	  	bindtap="startTimer" 
-	  	data-type="other" 
-	  	class="timer_ctrl {{isRuning && timerType == 'other' ? 'hide' : ''}}" >{{isRuning ? '完成': '灯'}}</view>
+	  	class="timer_ctrl {{isRuning && timerType == 'work' ? 'hide' : ''}}" >{{isRuning ? '关闭': '电视'}}</view>
 	</view>
 </view>
 

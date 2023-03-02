@@ -1,12 +1,12 @@
 <view class="container">
 	<view class="section panel">
-	  <text class="section_title">设备工作时长(分钟)</text>
+	  <text class="section_title">定时关闭灯(分钟)</text>
 	  <view class="section_body">
 	    <slider 
 	    	bindchange="changeWorkTime" 
 	    	show-value="true" 
 	    	min="1"
-	    	max="60"
+	    	max="120"
 	    	value="{{workTime}}"
 	    	left-icon="cancel" 
 	    	right-icon="success_no_circle"/>
@@ -14,13 +14,13 @@
 	</view>
 
 	<view class="section panel">
-	  <text class="section_title">休息时长(分钟)</text>
+	  <text class="section_title">定时关闭电视(分钟)</text>
 	  <view class="section_body">
 	    <slider 
 	    	bindchange="changeRestTime" 
 	    	show-value="true"
-	    	min="5"
-	    	max="60"
+	    	min="1"
+	    	max="120"
 	    	value="{{restTime}}"
 	    	left-icon="cancel"
 	    	right-icon="success_no_circle"/>

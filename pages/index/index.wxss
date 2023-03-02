@@ -115,20 +115,13 @@
   color: #999;
 }
 
-.timer_footer1 {
+.timer_footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   padding-top: 40px;
   transition: all .3s;
-}
-.timer_footer2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    transition: all .3s;
 }
 
 .timer .timer_ctrl {
